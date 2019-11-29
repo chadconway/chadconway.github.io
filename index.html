@@ -20,45 +20,100 @@
 			integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
 			crossorigin="anonymous"
 		></script>
-
+		<script src="public/js/index.js"></script>
 		<!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
             rel="stylesheet"
             integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
             crossorigin="anonymous"> -->
 
 		<!-- Darkly bootswatch theme -->
-		<link rel="stylesheet" href="public/css/bootstrap4-darkly.css" />
+		<link rel="stylesheet" href="public/css/bootstrap.css" />
+		<link rel="stylesheet" href="public/css/index.css" />
 	</head>
 
 	<body>
-		<div class="jumbotron jumbotron-fluid">
-			<div class="container">
-				<h1 class="display-4">Welcome to Chad Conway's GitHub!</h1>
-				<p class="lead">
-					This is my static site built with Github pages. To view my Github
-					repositories without the help of this static site click
-					<a href="https://github.com/chadsconway">here.</a>
-				</p>
+		<div id="main">
+			<div class="jumbotron jumbotron-fluid">
+				<div class="container">
+					<h1 class="display-4">Welcome to Chad Conway's GitHub!</h1>
+					<p class="lead">
+						This is my static site built with Github pages. To view my Github
+						repositories without the help of this static site click
+						<a href="https://github.com/chadsconway">here.</a>
+					</p>
+				</div>
 			</div>
-		</div>
-		<div class="card ml-5" style="width: 24rem;">
-			<div class="card-body">
-				<h5 class="card-title">Web Visualizations</h5>
-				<h6 class="card-subtitle mb-2 text-muted">Type: Github Repository</h6>
-				<p class="card-text">
-					Examples of dashboard visualizations implemented with different jQuery
-					charting plugins.
-				</p>
-				<a
-					href="https://chadsconway.github.io/Coursework-MSSE655-WebVisualizations/"
-					class="card-link"
-					>View Dashboards</a
-				>
-				<a
-					href="https://github.com/chadsconway/Coursework-MSSE655-WebVisualizations"
-					class="card-link"
-					>View Github Repo</a
-				>
+			<div id="firstRow" class="row">
+				<div id="firstRowFirstColumn" class="column">
+					<div class="card ml-5 rounded  effect" style="width: 90%;">
+						<iframe
+							scrolling="no"
+							frameborder="0"
+							class="shadow"
+							id="webvisuals"
+							src="https://chadsconway.github.io/Coursework-MSSE655-WebVisualizations"
+						></iframe>
+						<div class="card-body">
+							<h5 class="card-title">Web Visualizations</h5>
+							<h6 class="card-subtitle mb-2 text-muted">
+								Type: Github Repository
+							</h6>
+							<h6 class="card-subtitle mb-2 text-muted">
+								Category: Course Project
+							</h6>
+							<h6 class="card-subtitle mb-2 text-muted">
+								Course: Web Visualizations Frameworks
+							</h6>
+							<p class="card-text">
+								Examples of dashboard visualizations implemented with different
+								jQuery charting plugins.
+							</p>
+							<a
+								href="https://chadsconway.github.io/Coursework-MSSE655-WebVisualizations/"
+								class="card-link btn btn-primary btn-lg"
+								>View Dashboards</a
+							>
+							<a
+								href="https://github.com/chadsconway/Coursework-MSSE655-WebVisualizations"
+								class="card-link btn btn-primary btn-lg"
+								>View Github Repo</a
+							>
+						</div>
+					</div>
+				</div>
+				<div id="firstRowSecondColumn" class="column">
+					<div class="card ml-5 rounded effect" style="width: 90%;">
+						<iframe
+							id="webvisuals"
+							src="https://chadsconway.github.io/Hangman"
+						></iframe>
+						<div class="card-body">
+							<h5 class="card-title">Hangman</h5>
+							<h6 class="card-subtitle mb-2 text-muted">
+								Type: Github Repository
+							</h6>
+							<h6 class="card-subtitle mb-2 text-muted">
+								Category: Course Project
+							</h6>
+							<h6 class="card-subtitle mb-2 text-muted">
+								Course: Javascript Programming
+							</h6>
+							<p class="card-text">
+								Classic "Hangman" word-guessing game.
+							</p>
+							<a
+								href="https://chadsconway.github.io/Hangman"
+								class="card-link btn btn-primary btn-lg"
+								>View Hangman</a
+							>
+							<a
+								href="https://github.com/chadsconway/Hangman"
+								class="card-link btn btn-primary btn-lg"
+								>View Github Repo</a
+							>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</body>
